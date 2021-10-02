@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de JavaScript</title>
+    <script src="scripts/scripts.js"></script>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Generar Curp</legend>
+        <form action="" method="POST">
+            <label>Nombre(s):</label>
+            <input type="text" id="caja_nombre" name="caja_nombre" size="15" />
+            <br>
+            <br>
+            <br>
+            <label>Apellido Paterno:</label>
+            <input type="text" id="caja_ap_p" name="caja_ap_p" , size="15" />
+            <br>
+            <br>
+            <br>
+            <label>Apellido Materno:</label>
+            <input type="text" id="caja_ap_m" name="caja_ap_m" , size="15" />
+            <br>
+            <br>
+            <br>
+            <label>Día de Nacimiento:</label>
+            <input type="text" id="caja_dia_nac" name="caja_dia_nac" , size="15" />
+            <br>
+            <br>
+            <br>
+            <label>Mes De Nacimiento:</label>
+            <input type="text" id="caja_mes_nac" name="caja_mes_nac" , size="15" />
+            <br>
+            <br>
+            <br>
+            <label>Año De Nacimiento:</label>
+            <input type="text" id="caja_anio" name="caja_anio" , size="15" />
+            <br>
+            <br>
+            <br>
+            <label>Género:</label>
+            <input type="text" id="caja_sex" name="caja_sex" , size="15" />
+            <br>
+            <br>
+            <br>
+            <label>Estado de Nacimiento:</label>
+            <input type="text" id="estado_nac" name="estado_nac" , size="15" />
+            <br>
+            <br>
+            <br>
+            <label id="res"></label>
+            <br><br><br>
+            <input type="button" onclick="obtenerCurp()" value="CONSULTAR CURP">
+        </form>
+        <br><br>
+    </fieldset>
+    <fieldset>
+        <legend>CONVERTIDOR DE NUMEROS DECIMALES</legend>
+        <form action="" method="POST">
+            <label>Número Decimal</label>
+            <input type="text" id="caja_numDecimal" name="caja_numDecimal" size="15" />
+            <br>
+            <br>
+            <br>
+            <label>Decimal a Binario</label>
+            <input type="text" id="caja_numBinario" name="caja_numBinario" size="15" />
+            <br>
+            <br>
+            <br>
+            <label>Decimal a Hexadecimal</label>
+            <input type="text" id="caja_numHex" name="caja_numHex " size="15" />
+            <br>
+            <br>
+            <br>
+            <label>Decimal a Octal</label>
+            <input type="text" id="caja_numOctal" name="caja_numOctal" size="15" />
+            <br>
+            <br>
+            <br>
+            <button type="button" onclick="obtenerSistemas()"> CONVERTIR </button>
+            <br><br><br>
+            <fieldset>
+                <legend>MANIPULADOR DE CADENAS </legend>
+                <form action="" method="POST">
+                    <label>Ingrese una cadena:</label>
+                    <input type="text" id="caja_entrada" name="caja_num_control" maxlength="10" size="10" required />
+                    <br><br><br>
+                    <label>Cantidad vocales:</label>
+                    <input type="text" id="caja_voc" name="caja_num_control" maxlength="10" size="10" required />
+                    <br><br><br>
+                    <label>Cantidad consonantes:</label>
+                    <input type="text" id="caja_cons" name="caja_num_control" maxlength="10" size="10" required />
+                    <br><br><br>
+                    <label>Cadena alterada:</label>
+                    <input type="text" id="caja_alt" name="caja_num_control" maxlength="10" size="10" required />
+                    <br><br><br>
+                    <input type="button" onclick="trnasformarCadena()" value="Obtener" />
+                </form>
+            </fieldset>
+        </form>
+    </fieldset>
+</body>
+
+</html>
